@@ -212,3 +212,22 @@ function blackAll() {
   document.getElementById("cardJavaScript").innerHTML = "";
   document.getElementById("cardGame").innerHTML = "";
 }
+
+function noLayout() {
+    document.getElementById('cards').classList.value=''
+}
+
+function verticalLayout() {
+    noLayout()
+    document.getElementById('cards').classList.add('vertical')
+}
+
+function horizontalLayout() {
+    noLayout()
+    document.getElementById('cards').classList.add('horizontal')
+}
+
+function gridLayout() {
+    noLayout()
+    document.getElementById('cards').classList.add('grid')
+}
